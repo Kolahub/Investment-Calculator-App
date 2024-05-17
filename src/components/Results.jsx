@@ -4,12 +4,12 @@ function Results({ resultsArr }) {
     <table id="result">
       <thead>
         <tr>
-          <th>Year</th>
-          <th>Investment Value</th>
-          <th>{"Interest(Year)"}</th>
+          <th className="center">Year</th>
+          <th className="center"> Investment Value</th>
+          <th className="center">{"Interest(Year)"}</th>
 
-          <td>Total Interest</td>
-          <td>Interest Captital</td>
+          <td className="center">Total Interest</td>
+          <td className="center">Interest Captital</td>
         </tr>
       </thead>
 

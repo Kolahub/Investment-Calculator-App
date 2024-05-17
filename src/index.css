@@ -41,8 +41,6 @@ body {
 .input-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* display: flex;
-  justify-content: space-evenly; */
   gap: 1.5rem;
 }
 
@@ -62,7 +60,7 @@ body {
   border-radius: 0.25rem;
   background-color: transparent;
   color: #c2e9e0;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 #result {
@@ -87,4 +85,17 @@ body {
 
 .center {
   text-align: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #user-input { 
+    max-width: 23rem;
+  }
+
+  #result {
+    max-width: 23rem;
+    padding:  .5rem 0;
+    margin: 1rem auto;
+  }
+
 }
