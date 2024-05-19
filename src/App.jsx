@@ -23,6 +23,10 @@ function App() {
       return updatedValue;
     });
   }
+  let errMsg = ''
+  if (values.duration < 1 && values.duration !== '') {
+    errMsg = <p className="center">Invalid input data provided.</p>
+  }
 
   let results = calculateInvestmentResults(values);
 
@@ -53,7 +57,8 @@ function App() {
           />
         </div>
       </form>
-      <Results resultsArr={results} />
+      {errMsg}
+      <Results resultsArr={results} msg ={errMsg}/>
     </>
   );
 }
